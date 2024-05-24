@@ -1,43 +1,17 @@
-import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
-
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+"use client"
 
 import { cn } from "@/utils/cn";
-
-import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
-// import {  } from "components\ui\BackgroundGradientAnimation.tsx";
+import { useState } from "react";
+import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
-import animationData from "@/data/confetti.json";
+import { IoCopyOutline } from "react-icons/io5";
 import MagicButton from "./MagicButton";
-
-export const BentoGrid = ({
-  className,
-  children,
-}: {
-  className?: string;
-  children?: React.ReactNode;
-}) => {
-  return (
-    <div
-      className={cn(
-        // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
-};
 
 export const BentoGridItem = ({
   className,
   id,
   title,
   description,
-  //   remove unecessary things here
   img,
   imgClassName,
   titleClassName,
@@ -60,7 +34,7 @@ export const BentoGridItem = ({
   const defaultOptions = {
     loop: copied,
     autoplay: copied,
-    animationData: animationData,
+    // animationData: Animation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -179,8 +153,7 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <img src="/confetti.gif" alt="confetti" />
               </div>
 
               <MagicButton
