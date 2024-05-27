@@ -18,6 +18,7 @@ export function Button({
   borderClassName,
   duration,
   className,
+  onclick,
   ...otherProps
 }: {
   borderRadius?: string;
@@ -29,6 +30,7 @@ export function Button({
   className?: string;
   [key: string]: any;
 }) {
+  
   return (
     <Component
       className={cn(
