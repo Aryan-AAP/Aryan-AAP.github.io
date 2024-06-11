@@ -6,6 +6,7 @@ import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
 import { Button } from "./ui/MovingBorders";
 import Link from "next/link";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -13,8 +14,14 @@ const RecentProjects = () => {
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
-      </h1>
+        <div className="flex mt-6 cursor-pointer hover:shadow-transparent justify-center items-center ">
 
+
+<Link className=" heading  " href="https://github.com/Aryan-AAP">
+<Image className=" heading  " height={34} width={34} alt="Github" src="/git.svg" />
+</Link>
+        </div>
+      </h1>
 
 
       
