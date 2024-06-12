@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { socialMedia } from "@/data";
 import Link from "next/link";
+import { TracingBeam } from "@/components/ui/tracing-beam";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,15 +22,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         
+        {/* <TracingBeam> */}
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
-          >
+            >
               
             {children}
           </ThemeProvider>
+            {/* </TracingBeam> */}
         </body>
     </html>
   );

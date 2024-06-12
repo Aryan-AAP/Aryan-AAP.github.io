@@ -3,7 +3,15 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "TechStack", link: "#textstack" },
-  { name: "Contact", link: "#contact" },
+  // { name: "Contact", link: "#contact" },
+  { name: "Blogs", link: "/blogs" },
+];
+export const blogNav = [
+  { name: "My Portfolio", link: "/" },
+  { name: "Blog", link: "/blogs" },
+  // { name: "Projects", link: "#projects" },
+  // { name: "TechStack", link: "#textstack" },
+  // { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
@@ -13,7 +21,7 @@ export const gridItems = [
 
 
     ,
-    description: " Random Fact I use LOQ ",
+    description: " Random Fact I use LOQ Gaming Laptop ",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4  lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -43,7 +51,7 @@ export const gridItems = [
   {
     id: 4,
     title: "Open to connect and to work together",
-    description: "",
+    description: "btw i write blogs too can go to /blogs for it",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
