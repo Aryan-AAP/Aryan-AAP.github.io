@@ -16,7 +16,7 @@ const page = () => {
    
 
       <h1 className="heading mt-8">
-        Aryan's {"  "}
+        Aryan&apos;s {"  "}
         <span className="text-purple ">Blogs</span>
         <ThreeDCardDemo blogImage='firstBlogPhoto.jpg'  pink="https://mud-jaw-603.notion.site/Personal-Website-ef89e8bff5b546d0908cf74318fad73f" heading='Know About Me' desc="
         It is my very first blog, this blog will tell you about me, stuffs that you won't get on a portfolio or any professional site, the insights and many more." 
