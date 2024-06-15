@@ -2,6 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import Image from "next/image";
+import Link from "next/link";
 import React, {
   createContext,
   useState,
@@ -96,6 +97,7 @@ export const CardBody = ({
 };
 
 export const CardItem = ({
+  href,
   as: Tag = "div",
   children,
   className,
@@ -107,6 +109,7 @@ export const CardItem = ({
   rotateZ = 0,
   ...rest
 }: {
+  href:string;
   as?: React.ElementType;
   children: React.ReactNode;
   className?: string;
@@ -140,7 +143,9 @@ export const CardItem = ({
       className={cn("w-fit transition duration-200 ease-linear", className)}
       {...rest}
     >
+      <Link href={href} >
       {children}
+      </Link>
     </Tag>
   );
 };

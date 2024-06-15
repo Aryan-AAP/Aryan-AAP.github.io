@@ -27,17 +27,21 @@ flex flex-col justify-center items-center relative group/card w-full sm:w-[30rem
 <CardItem
           translateZ="50"
           className="text-xl font-bold  text-white-100 mb-5"
+        href={pink}
           >
           {heading}
         </CardItem>
         <CardItem
+        href={pink}
           as="p"
           translateZ="60"
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
           >
           {desc}
         </CardItem>
-        <CardItem translateZ="100" className="w-full pt-8 mt-4">
+        <CardItem
+          href={pink}
+         translateZ="100" className="w-full pt-8 mt-4">
           <Image
             src={blogImage}
             height="1000"
@@ -49,13 +53,13 @@ flex flex-col justify-center items-center relative group/card w-full sm:w-[30rem
         <div className="flex justify-between items-center mt-8">
           <CardItem
             translateZ={20}
-            as={Link  }
-            href={  pink
-            }
+            // as={div  }
+           href={pink}
             target="__blank"
             className="px-4 py-2 text-lg rounded-xl  font-extrabold dark:text-white"
             >
-            Blog Link 
+            Thanks for Visiting
+           
           </CardItem>
        
         </div>
