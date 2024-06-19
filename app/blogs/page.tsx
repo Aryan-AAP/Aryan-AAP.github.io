@@ -2,7 +2,8 @@ import Footer from '@/components/Footer'
 import { ThreeDCardDemo } from '@/components/inHouse/blogCard'
 import { FloatingNav } from '@/components/ui/FloatingNav'
 import { Spotlight } from '@/components/ui/Spotlight'
-import { navItems } from '@/data'
+import { InfiniteMovingCards } from '@/components/ui/infiniterMovingCards'
+import { navItems, testimonials } from '@/data'
 import React from 'react'
 
 const page = () => {
@@ -22,6 +23,17 @@ const page = () => {
         It is my very first blog, this blog will tell you about me, stuffs that you won't get on a portfolio or any professional site, the insights and many more." 
 
         />
+
+          <div
+          // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
+          className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
+        >
+          <InfiniteMovingCards
+            items={testimonials}
+            direction="right"
+            speed="slow"
+          />
+        </div>
 
       </h1>
 

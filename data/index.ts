@@ -88,10 +88,18 @@ export const projects = [
     des: "Send and Recieve Anonymous message",
     img: "/mistrymessage.png",
     iconLists: ["/next.svg","/re.svg", "/tail.svg", "/ts.svg",  "/resend-icon-white.png"],
-    link: "https://truefeedback.in/",
+    link: "https://aryan-aap.github.io/",
   },
   {
     id: 2,
+    title: "Portfolio Website",
+    des: "Yes i also conisder it to be a good design showcase have used NEXTJS to build it i know its Overkill haa.",
+    img: "/portfolioImage.png",
+    iconLists: ["/next.svg","/re.svg", "/tail.svg", "/ts.svg"],
+    link: "https://truefeedback.in/",
+  },
+  {
+    id: 4,
     title: "Gate Quiz app",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/gate.png",
@@ -107,7 +115,7 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://iphone-doc.vercel.app/",
   },  {
-    id: 4,
+    id: 5,
     title: "Secret Project",
     des: "Want hints contact ",
     img: "secret.webp",
@@ -224,7 +232,7 @@ export const socialMedia = [
   {
     id: 2,
     img: "/twit.svg",
-    link: "https://x.com/aryan83202",
+    link: "https://x.com/_aryanaap",
 
   },
   {
@@ -235,4 +243,4 @@ export const socialMedia = [
   },
 ];
 
-export const words = ["Next.JS", "MERN", "DJANGO", "Frontend", "Backend"];
+export const words = ["Next.JS","SOFTWARE", "MERN", "DJANGO", "Frontend", "Backend"];
