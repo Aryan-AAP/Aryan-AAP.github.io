@@ -1,10 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Link from "next/link";
 
+
+let direction="left"
+let speed ="slow"
 export function ThreeDCardDemo({
   heading,
   desc,
@@ -17,10 +20,16 @@ export function ThreeDCardDemo({
   :string;
   blogImage:string;
 }) {
-  return (
-    <CardContainer className="inter-var  bg-violet-500 ">
+
+
+  //here is the return 
+    return (
+ 
+
+
+    <CardContainer className="inter-var flex  bg-violet-500 ">
 <CardBody className="
- bg-black
+ bg-gradient-to-r from-blue-600 to-black-100
    border-black/[0.1]
 
 flex flex-col justify-center items-center relative group/card w-full sm:w-[30rem] h-[70vh] rounded-xl p-6 border dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] transition-all duration-300 ease-in-out">
@@ -46,7 +55,7 @@ flex flex-col justify-center items-center relative group/card w-full sm:w-[30rem
             src={blogImage}
             height="1000"
             width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            className="h-60 w-full  object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
             />
         </CardItem>
@@ -65,6 +74,5 @@ flex flex-col justify-center items-center relative group/card w-full sm:w-[30rem
         </div>
       </CardBody>
     </CardContainer>
-           
   );
 }
