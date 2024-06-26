@@ -1,12 +1,12 @@
-import Footer from "@/components/Footer";
-import { ThreeDCardDemo } from "@/components/inHouse/blogCard";
-import { FloatingNav } from "@/components/ui/FloatingNav";
-import { Spotlight } from "@/components/ui/Spotlight";
-import { navItems, testimonials } from "@/data";
-import React from "react";
-import { blogsarr } from "@/data/blogs";
-import { InfiniteMovingCards } from "@/components/ui/infiniterMovingCards";
-import { FollowerPointerCard } from "@/components/ui/following-pointer";
+import Footer from '@/components/Footer'
+import { ThreeDCardDemo } from '@/components/inHouse/blogCard'
+import { FloatingNav } from '@/components/ui/FloatingNav'
+import { Spotlight } from '@/components/ui/Spotlight'
+import { navItems, testimonials } from '@/data'
+import React from 'react'
+import { blogsarr } from '@/data/blogs'
+import { InfiniteMovingCards } from '@/components/ui/infiniterMovingCards'
+import { FollowerPointerCard } from '@/components/ui/following-pointer'
 const page = () => {
   return (
     <div className="">
@@ -26,16 +26,13 @@ const page = () => {
       </div>
 
       <h1 className="heading mt-8">
-        Aryan&apos;s {"  "}
+        Aryan&apos;s {'  '}
         <span className="text-purple ">Blogs</span>
       </h1>
-   
-
 
       <InfiniteMovingCards speed="slow" />
-   
     </div>
-  );
-};
+  )
+}
 
-export default page;
+export default page

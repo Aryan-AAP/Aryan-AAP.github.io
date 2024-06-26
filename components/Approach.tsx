@@ -1,8 +1,8 @@
-"use client"
-import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
+'use client'
+import React from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 
-import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { CanvasRevealEffect } from './ui/CanvasRevealEffect'
 
 const Approach = () => {
   return (
@@ -63,10 +63,10 @@ const Approach = () => {
         </Card>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Approach;
+export default Approach
 
 const Card = ({
   title,
@@ -75,12 +75,12 @@ const Card = ({
   // add this one for the desc
   des,
 }: {
-  title: string;
-  icon: React.ReactNode;
-  children?: React.ReactNode;
-  des: string;
+  title: string
+  icon: React.ReactNode
+  children?: React.ReactNode
+  des: string
 }) => {
-  const [hovered, setHovered] = React.useState(false);
+  const [hovered, setHovered] = React.useState(false)
   return (
     <div
       onMouseEnter={() => setHovered(true)}
@@ -91,9 +91,9 @@ const Card = ({
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
+        background: 'rgb(4,7,29)',
         backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+          'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)',
       }}
     >
       {/* change to h-10 w-10 , add opacity-30  */}
@@ -136,14 +136,14 @@ const Card = ({
           className="text-sm opacity-0 group-hover/canvas-card:opacity-100
          relative z-10 mt-4 group-hover/canvas-card:text-white text-center
          group-hover/canvas-card:-translate-y-2 transition duration-200"
-          style={{ color: "#E4ECFF" }}
+          style={{ color: '#E4ECFF' }}
         >
           {des}
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 // add order prop for the Phase number change
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
@@ -183,8 +183,8 @@ const AceternityIcon = ({ order }: { order: string }) => {
     //     style={{ mixBlendMode: "darken" }}
     //   />
     // </svg>
-  );
-};
+  )
+}
 
 export const Icon = ({ className, ...rest }: any) => {
   return (
@@ -199,5 +199,5 @@ export const Icon = ({ className, ...rest }: any) => {
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
     </svg>
-  );
-};
+  )
+}

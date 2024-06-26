@@ -1,8 +1,8 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow } from 'react-icons/fa6'
 
-import { socialMedia } from "@/data";
-import MagicButton from "./ui/MagicButton";
-import Link from "next/link";
+import { socialMedia } from '@/data'
+import MagicButton from './ui/MagicButton'
+import Link from 'next/link'
 // import {  useRouter } from "next/router";
 
 const Footer = () => {
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,6 +1,5 @@
 export const handleCopy = () => {
-    // "use server"
-    const text = "hsu@jsmastery.pro";
-    navigator.clipboard.writeText(text);
-    
-  };
+  // "use server"
+  const text = 'hsu@jsmastery.pro'
+  navigator.clipboard.writeText(text)
+}

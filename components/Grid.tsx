@@ -1,6 +1,6 @@
-import { gridItems } from "@/data";
-import { BentoGridItem } from "./ui/BentoGrid";
-import { BentoGrid } from "./ui/cheaking";
+import { gridItems } from '@/data'
+import { BentoGridItem } from './ui/BentoGrid'
+import { BentoGrid } from './ui/cheaking'
 
 const Grid = () => {
   return (
@@ -24,7 +24,7 @@ const Grid = () => {
       </BentoGrid>
       {/* <h1>Hello</h1> */}
     </section>
-  );
-};
+  )
+}
 
-export default Grid;
+export default Grid

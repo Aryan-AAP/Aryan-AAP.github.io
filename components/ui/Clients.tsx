@@ -1,15 +1,15 @@
-"use client";
+'use client'
 
-import React from "react";
+import React from 'react'
 
-import { companies, testimonials } from "@/data";
-import { InfiniteMovingCards } from "./infiniterMovingCards";
+import { companies, testimonials } from '@/data'
+import { InfiniteMovingCards } from './infiniterMovingCards'
 const Clients = () => {
   return (
     <section id="textstack" className="py-20">
       <h1 className="heading pb-10">
-        My 
-        <span className="text-purple">  Tech Stack</span>
+        My
+        <span className="text-purple"> Tech Stack</span>
       </h1>
 
       <div className="flex flex-col items-center  max-lg:mt-10">
@@ -45,7 +45,7 @@ const Clients = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Clients;
+export default Clients
